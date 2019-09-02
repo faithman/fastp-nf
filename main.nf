@@ -2,7 +2,7 @@
 
 params.email = 'yewangfaith@gmail.com'
 params.directory = "$PWD/"
-params.out = params.directory.replace("raw", "processed")
+params.out = params.directory.replace("raw", "test")
 println params.out
 params.threads = 8
 println "Running Fastp trim on " + params.directory

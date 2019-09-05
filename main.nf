@@ -141,7 +141,7 @@ process trim {
         set dataset_id, file("${dataset_id}_1P.fq.gz"), file("${dataset_id}_2P.fq.gz") into trim_output
 
     """
-    fastp -i $forward -I $reverse -o ${dataset_id}_1P.fq.gz -O ${dataset_id}_2P.fq.gz
+    fastp -t 4 --detect_adapter_for_pe -i $forward -I $reverse -o ${dataset_id}_1P.fq.gz -O ${dataset_id}_2P.fq.gz
     """
 
 }

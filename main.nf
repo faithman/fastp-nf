@@ -1,5 +1,7 @@
 #!/usr/bin/env nextflow
 
+//author Ye Wang <yewangfaith@gmail.com>
+
 params.email = 'yewangfaith@gmail.com'
 params.directory = "$PWD/"
 params.out = params.directory.replace("raw", "test")
